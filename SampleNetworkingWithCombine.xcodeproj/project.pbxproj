@@ -14,6 +14,9 @@
 		F82298942D329C17008D417F /* SampleNetworkingWithCombineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82298932D329C17008D417F /* SampleNetworkingWithCombineTests.swift */; };
 		F822989E2D329C17008D417F /* SampleNetworkingWithCombineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F822989D2D329C17008D417F /* SampleNetworkingWithCombineUITests.swift */; };
 		F82298A02D329C17008D417F /* SampleNetworkingWithCombineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F822989F2D329C17008D417F /* SampleNetworkingWithCombineUITestsLaunchTests.swift */; };
+		F82298AE2D329CCD008D417F /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82298AD2D329CCD008D417F /* Character.swift */; };
+		F82298B12D329DA2008D417F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82298B02D329DA2008D417F /* ViewModel.swift */; };
+		F82298B32D32A536008D417F /* CharacterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82298B22D32A536008D417F /* CharacterRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		F82298992D329C17008D417F /* SampleNetworkingWithCombineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleNetworkingWithCombineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F822989D2D329C17008D417F /* SampleNetworkingWithCombineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleNetworkingWithCombineUITests.swift; sourceTree = "<group>"; };
 		F822989F2D329C17008D417F /* SampleNetworkingWithCombineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleNetworkingWithCombineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F82298AD2D329CCD008D417F /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		F82298B02D329DA2008D417F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		F82298B22D32A536008D417F /* CharacterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +100,13 @@
 		F82298812D329C16008D417F /* SampleNetworkingWithCombine */ = {
 			isa = PBXGroup;
 			children = (
+				F82298AF2D329D95008D417F /* Services */,
+				F82298AC2D329CC0008D417F /* Model */,
 				F82298822D329C16008D417F /* SampleNetworkingWithCombineApp.swift */,
 				F82298842D329C16008D417F /* ContentView.swift */,
 				F82298862D329C17008D417F /* Assets.xcassets */,
 				F82298882D329C17008D417F /* Preview Content */,
+				F82298B22D32A536008D417F /* CharacterRow.swift */,
 			);
 			path = SampleNetworkingWithCombine;
 			sourceTree = "<group>";
@@ -125,6 +134,22 @@
 				F822989F2D329C17008D417F /* SampleNetworkingWithCombineUITestsLaunchTests.swift */,
 			);
 			path = SampleNetworkingWithCombineUITests;
+			sourceTree = "<group>";
+		};
+		F82298AC2D329CC0008D417F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F82298AD2D329CCD008D417F /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F82298AF2D329D95008D417F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F82298B02D329DA2008D417F /* ViewModel.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F82298B32D32A536008D417F /* CharacterRow.swift in Sources */,
+				F82298AE2D329CCD008D417F /* Character.swift in Sources */,
 				F82298852D329C16008D417F /* ContentView.swift in Sources */,
 				F82298832D329C16008D417F /* SampleNetworkingWithCombineApp.swift in Sources */,
+				F82298B12D329DA2008D417F /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
